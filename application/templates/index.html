@@ -7,24 +7,6 @@
             <h1>Welcome to CS Tech University</h1>
         </div>
         {% else %}
-        <div class="container box">
-            <h2>Login</h2>
-            <span class = "register">Don't have an account?</span>
-            <span ><a href="#" class="goto">register</a></span>
-            <div class="container-sm form-box">
-                <form>
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
-                        <a href="#" class = pass> Fogot password? </a>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
-                </form>
-            </div> 
-        </div>
+        {% include "includes/login.html" %}
         {% endif %}
-    {% endblock%}
+{% endblock%}

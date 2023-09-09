@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container register_box">
+    <form>
+    <h3>Register</h3>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="id">Student ID</label>
+        </div>
+        <div class="col-75">
+            <input type="number" id="id" name="student_id">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="phone">Phone</label>
+        </div>
+        <div class="col-75">
+            <input type="number" id="phone" name="phone_num">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email Address</label>
+        </div>
+        <div class="col-75">
+            <input type="email" id="email" name="email_add">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-75">
+            <input type="password" id="pass" name="pass_add">
+        </div>
+      </div>
+      
+      <div class="row">
+        <input type="submit" value="register">
+      </div>
+    </form>
+  </div>
+{% endblock%}
