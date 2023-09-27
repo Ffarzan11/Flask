@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container-fluid">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Course ID</th>
+        <th scope="col">Course Code</th>
+        <th scope="col">Course Title</th>
+        <th scope="col">Credit</th>
+        <th scope="col">Term</th>
+        <th scope="col">Enroll</th>
+
+      </tr>
+    </thead>
+    <tbody>
+        {% for data in course_data%}
+      <tr>
+        <td>{{data["courseID"]}}</td>
+        <td>{{data["title"]}}</td>
+        <td>{{data["description"]}}</td>
+        <td>{{data["credits"]}}</td>
+        <td>{{data["term"]}}</td>
+        <td><button type = "submit">Enroll</button></td>
+      </tr>
+      {% endfor%}
+    </tbody>
+  </table>
+</div>
+  {%endblock%}

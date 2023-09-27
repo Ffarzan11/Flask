@@ -2,11 +2,11 @@
 
 {% block content %}
 
-        {% if login %}
         <div class = "welcome">
             <h1>Welcome to CS Tech University</h1>
         </div>
-        {% else %}
-        {% include "includes/login.html" %}
-        {% endif %}
+        <div class="login-header">
+            <span class = "log-in">Already have an account?</span>
+            <span ><a href="{{url_for('login')}}"class="goto">login</a></span>
+        <div
 {% endblock%}

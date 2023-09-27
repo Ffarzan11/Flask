@@ -122,3 +122,38 @@ input[type=text], input[type=number],input[type=email], input[type=password]{
     }
     
   }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+td button{
+  background-color: rgb(121, 232, 191) !important;
+  border-radius: 5px;
+  border-color: transparent;
+ 
+}
+
+td button:hover{
+  border-style: outset;
+  border-color: #cff8ea;
+}
+
+.nav-link {
+  color: black;
+}
+
+.login-header{
+  position: relative;
+  text-align: center;
+  top: 20%;
+  color: white;
+  font-size: 20px;
+}
